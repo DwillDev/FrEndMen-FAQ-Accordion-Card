@@ -1,8 +1,14 @@
 .accordion {
-  &__content {
+  &__q {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
   }
 
-  &__q {
+  &__arrow{
+
+
   }
 
   &__a {

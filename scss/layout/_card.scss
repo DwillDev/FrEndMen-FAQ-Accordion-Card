@@ -1,15 +1,12 @@
 .card {
   &__illustration {
+      background: url('/./img/illustration-woman-online-mobile.svg') no-repeat center top;
   }
 
   &__faq {
-  }
-}
-
-.faq {
-  &__header {
-  }
-
-  &__accordion {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 }

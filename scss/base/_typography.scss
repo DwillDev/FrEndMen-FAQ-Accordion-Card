@@ -1,20 +1,24 @@
-.faq {
-  &__header {
+  h1 {
     font-weight: $bold;
-    color:$txt-pr;
-  }
-}
-
-.accordion {
-  &__content > * {
-    font-weight: $med;
+    color: $txt-pr;
   }
 
-  &__q {
+  h2 {
     color: $txt-sc;
+    font-weight: $med;
+
+    &:active {
+      color: $txt-pr;
+      font-weight: $bold;
+    }
   }
 
-  &__a {
+  p {
+    font-weight: $med;
     color: $txt-tr;
   }
-}
+
+  hr{
+    border:none;
+    border-bottom: .1rem solid $div-c;
+  }
