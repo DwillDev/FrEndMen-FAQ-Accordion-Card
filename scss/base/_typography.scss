@@ -1,0 +1,20 @@
+.faq {
+  &__header {
+    font-weight: $bold;
+    color:$txt-pr;
+  }
+}
+
+.accordion {
+  &__content > * {
+    font-weight: $med;
+  }
+
+  &__q {
+    color: $txt-sc;
+  }
+
+  &__a {
+    color: $txt-tr;
+  }
+}
