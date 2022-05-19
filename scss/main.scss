@@ -16,12 +16,11 @@
 // 3. Layout-related sections
 @import
   'layout/card',
-  'layout/grid',
-  'layout/flex';
+  'layout/grid';
 
 // 4. Components
 @import
-  'components/dropdown';
+  'components/accordion';
 
 //5. Media Queries
 @import
