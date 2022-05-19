@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AKAA,OAAO,CAAC,oFAAI;ADAZ,AAAA,IAAI,CAAA;EACA,SAAS,EAAC,KAAK;CAClB;;AAED,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU;EACtB,OAAO,EAAC,CAAC;EACT,MAAM,EAAC,CAAC;CACX;;AAED,AAAA,IAAI,CAAA;EACA,SAAS,EHaA,MAAM;CGZlB;;AGZD,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CACd",
     "sources": [
         "../scss/main.scss",
         "../scss/abstracts/_variables.scss",
@@ -10,9 +10,10 @@
         "../scss/base/_fonts.scss",
         "../scss/base/_typography.scss",
         "../scss/base/_helpers.scss",
+        "../scss/layout/_card.scss",
         "../scss/layout/_grid.scss",
-        "../scss/layout/_flex.scss",
-        "../scss/components/_dropdown.scss",
+        "../scss/components/_accordion.scss",
+        "../scss/media/_mobile.scss",
         "../scss/media/_pc.scss"
     ],
     "names": [],
