@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/abstracts/_variables.scss",
+        "../scss/abstracts/_functions.scss",
+        "../scss/abstracts/_mixins.scss",
+        "../scss/base/_base.scss",
+        "../scss/base/_fonts.scss",
+        "../scss/base/_typography.scss",
+        "../scss/base/_helpers.scss",
+        "../scss/layout/_grid.scss",
+        "../scss/layout/_flex.scss",
+        "../scss/components/_dropdown.scss",
+        "../scss/media/_pc.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
