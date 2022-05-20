@@ -22,7 +22,7 @@
     $bold:700;
 
     //Size
-    $body-sz:1.2rem;
-    // $h1-sz:clamp();
-    // $h2-sz:clamp();
-    // $p-sz:clamp();
+    $h1-sz:clamp(2rem,8vw,3rem);
+    $h2-sz:clamp(1.2rem,3.6vw,1.5rem);
+    $body-sz:clamp(1rem,3.2vw,1.2rem);
+
