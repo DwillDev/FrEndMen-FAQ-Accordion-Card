@@ -1,21 +1,29 @@
   h1 {
     font-weight: $bold;
     color: $txt-pr;
+    font-size: $h1-sz;
   }
 
   h2 {
     color: $txt-sc;
     font-weight: $med;
+    font-size:$h2-sz;
 
     &:active {
       color: $txt-pr;
       font-weight: $bold;
+    }
+
+    &:hover{
+      color: $arrow-c;
+      cursor:pointer;
     }
   }
 
   p {
     font-weight: $med;
     color: $txt-tr;
+    font-size: $body-sz;
   }
 
   hr{
