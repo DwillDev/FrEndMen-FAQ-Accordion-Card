@@ -1,7 +1,4 @@
 //Colors
-    //Page
-    $arrow-c:hsl(14, 88%, 65%);
-
     //Gradient
     $bg-c: linear-gradient(to bottom,hsl(273, 75%, 66%),hsl(240, 73%, 65%));
 
@@ -9,7 +6,8 @@
     $txt-pr:hsl(238, 29%, 16%);
     $txt-sc:hsl(237, 12%, 33%);
     $txt-tr:hsl(240, 6%, 50%);
-
+    $txt-hover:hsl(14, 88%, 65%);
+    
     //Divider
     $div-c: hsl(240, 5%, 91%);
 
@@ -22,7 +20,8 @@
     $bold:700;
 
     //Size
-    $h1-sz:clamp(2rem,8vw,3rem);
-    $h2-sz:clamp(1.2rem,3.6vw,1.5rem);
-    $body-sz:clamp(1rem,3.2vw,1.2rem);
+    $large-sz: calc(1.2rem + 4vmin);
+    // $med-sz:;
+    // $small-sz:;
+    $body-sz: 1.2rem;
 
