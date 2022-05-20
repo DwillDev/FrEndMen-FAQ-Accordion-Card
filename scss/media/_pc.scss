@@ -1,0 +1,58 @@
+@media only screen and (min-width: 1290px) {
+  .wrapper {
+    position: relative;
+
+    width: 66%;
+    height: 60%;
+    padding: 0;
+  }
+
+  .card {
+    background: white url('/./img/bg-pattern-desktop.svg') no-repeat -52rem -26rem /
+      clamp(83rem, 60vw, 86rem) auto;
+    height: 100%;
+    padding-left: 0;
+
+    &__illustration {
+      grid-area: ill;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    &__faq {
+      grid-area: faq;
+      width: 80%;
+
+      h1 {
+        text-align: left;
+      }
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'ill faq';
+  }
+
+  .illustration {
+    &__mb {
+      display: none;
+    }
+
+    &__pc {
+      display: block;
+      width: clamp(40rem, 30vw, 120rem);
+      transform: translate(-20%, 15%);
+
+      &--box {
+        width: clamp(14rem, 12vw, 94rem);
+        position: absolute;
+        z-index: 999;
+        left: -5rem;
+        top: 16rem;
+      }
+    }
+  }
+}
