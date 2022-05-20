@@ -1,41 +1,7 @@
-.card {
-  background: white url('/./img/bg-pattern-mobile.svg') no-repeat center top /
-    clamp(19rem, 66vw, 30rem) auto;
-  width: 100%;
-  height: fit-content;
-  padding: 2rem 2rem 5vh 2rem;
-  border-radius: 2rem;
-  box-shadow: 0.5rem 2rem 3rem rgba($txt-pr, 0.3);
-  position: relative;
-
-  &__illustration {
-    grid-area: ill;
-    padding-bottom: 12rem;
-  }
-
-  &__faq {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-    grid-area: faq;
-    text-align: left;
-
-    h1 {
-      text-align: center;
-    }
-  }
-}
-
-.illustration {
-  &__mb {
-    position: absolute;
-    right: 50%;
-    width: clamp(20rem, 67vw, 31rem);
-    transform: translate(50%, -70%);
-  }
-
-  &__pc {
-    display: none;
-  }
+.card{
+    @extend %center;
+    background-color: white;
+    width: calc(100% - 4rem);
+    border-radius: 2rem;
+    box-shadow: 0.5rem 2rem 3rem rgba($txt-pr, 0.3);
 }

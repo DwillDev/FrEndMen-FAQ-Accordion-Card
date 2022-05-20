@@ -6,23 +6,31 @@
   'abstracts/functions',
   'abstracts/mixins';
 
-// 2. Base stuff
+// 2. Vendors
+
+// 3. Base stuff
 @import
   'base/base',
   'base/fonts',
   'base/typography',
   'base/helpers';
 
-// 3. Layout-related sections
+// 4. Layout-related sections
 @import
   'layout/card',
+  'layout/flex',
   'layout/grid';
 
-// 4. Components
+// 5. Components
 @import
-  'components/accordion';
+  'components/accordion',
+  'components/illustration';
 
-//5. Media Queries
+// 6. Page-specific styles
+
+// 7. Themes
+
+//8. Media Queries
 @import
     'media/mobile',
     'media/pc';
