@@ -1,14 +1,13 @@
 h1 {
   font-weight: $bold;
   color: $txt-pr;
-
-  // font-size: $h1-sz;
+  font-size: $large-sz;
 }
 
 h2 {
   color: $txt-sc;
   font-weight: $med;
-  // font-size:$h2-sz;
+  font-size:$med-sz;
 
   &:hover {
     color: $txt-hover;
@@ -19,10 +18,10 @@ h2 {
 p {
   font-weight: $med;
   color: $txt-tr;
-  // font-size: $body-sz;
+  font-size: $small-sz;
 }
 
 hr {
   border: none;
-  // border-bottom: .1rem solid $div-c;
+  border-bottom: .1rem solid $div-c;
 }
