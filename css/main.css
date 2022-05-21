@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 body {
+  overflow-y: visible;
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat fixed;
   background: linear-gradient(to bottom, #af67e9, #6565e7) no-repeat fixed;
   font-size: 1.2rem;
@@ -9,11 +10,13 @@ body {
 h1 {
   font-weight: 700;
   color: #1d1e35;
+  font-size: clamp(1.2rem, 8vmin, 100rem);
 }
 
 h2 {
   color: #4a4b5e;
   font-weight: 400;
+  font-size: clamp(1.2rem, 3.6vmin, 100rem);
 }
 
 h2:hover {
@@ -24,10 +27,12 @@ h2:hover {
 p {
   font-weight: 400;
   color: #787887;
+  font-size: clamp(1.2rem, 3vmin, 100rem);
 }
 
 hr {
   border: none;
+  border-bottom: 0.1rem solid #e7e7e9;
 }
 
 html {
@@ -56,20 +61,73 @@ img {
   display: none;
 }
 
-.card {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.accordion, .illustration__mb {
+  margin: 0 auto;
 }
 
 .card {
-  background-color: white;
-  width: calc(100% - 4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 14vmin;
+  min-width: 200px;
+  position: relative;
+  left: 50%;
+  top: 20vh;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: calc(100% - 6rem);
+  padding-bottom: clamp(2rem, 7vh, 4rem);
+  margin-bottom: 50%;
+  background: white url("/./img/bg-pattern-mobile.svg") no-repeat center top/67% auto;
   border-radius: 2rem;
   -webkit-box-shadow: 0.5rem 2rem 3rem rgba(29, 30, 53, 0.3);
           box-shadow: 0.5rem 2rem 3rem rgba(29, 30, 53, 0.3);
+}
+
+.accordion {
+  width: calc(100% - 4rem);
+}
+
+.accordion__header {
+  padding-bottom: 2rem;
+}
+
+.accordion__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 1.5rem;
+}
+
+.accordion__q {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.accordion__a {
+  padding-top: 1rem;
+  width: calc(100% - 2rem);
+}
+
+.illustration__mb {
+  width: 67%;
+  margin-top: -30%;
 }
 
 @media only screen and (orientation: portrait) {
@@ -82,6 +140,9 @@ img {
   .illustration__pc {
     display: none;
   }
+  .card {
+    background: white url("/./img/bg-pattern-mobile.svg") no-repeat center top/67% auto;
+  }
 }
 
 @media only screen and (orientation: landscape) {
@@ -93,6 +154,9 @@ img {
   }
   .illustration__pc {
     display: block;
+  }
+  .card {
+    background: white url("/./img/bg-pattern-desktop.svg") no-repeat left;
   }
 }
 /*# sourceMappingURL=main.css.map */
