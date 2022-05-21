@@ -1,7 +1,21 @@
-.card{
-    @extend %center;
-    background-color: white;
-    width: calc(100% - 4rem);
-    border-radius: 2rem;
-    box-shadow: 0.5rem 2rem 3rem rgba($txt-pr, 0.3);
+.card {
+  //Flex
+  display: flex;
+  flex-flow: column wrap;
+  gap: 14vmin;
+  min-width:200px;
+
+  //Size & Position
+  position: relative;
+  left: 50%;
+  top: 20vh;
+  transform: translateX(-50%);
+  width: calc(100% - 6rem);
+  padding-bottom:clamp(2rem,7vh,4rem);
+  margin-bottom: 50%;
+
+  //Styling
+  background: white url('/./img/bg-pattern-mobile.svg') no-repeat center top / 67% auto;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 2rem 3rem rgba($txt-pr, 0.3);
 }

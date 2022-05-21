@@ -1,0 +1,7 @@
+.illustration{
+    &__mb{
+        @extend %center-margin;
+        width:67%;
+        margin-top: -30%;
+    }
+}

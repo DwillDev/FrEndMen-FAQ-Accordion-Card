@@ -1,4 +1,8 @@
 body{
+    //Size & Position
+    overflow-y: visible;
+
+    //Styling
     background: $bg-c no-repeat fixed;
     font-size:$body-sz;
     font-family: $ks;
