@@ -61,7 +61,7 @@ img {
   display: none;
 }
 
-.accordion, .illustration__mb {
+.accordion {
   margin: 0 auto;
 }
 
@@ -80,11 +80,11 @@ img {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   min-width: 200px;
-  max-width: 400rem;
+  max-width: 600px;
   width: calc(100% - 6rem);
   padding-bottom: clamp(2rem, 7vh, 4rem);
   margin-bottom: 50%;
-  background: white url("/./img/bg-pattern-mobile.svg") no-repeat center top/67% auto;
+  background: white url("/./img/bg-pattern-mobile.svg") no-repeat center top/calc(min(67%,35rem)) auto;
   border-radius: 2rem;
   -webkit-box-shadow: 0.5rem 2rem 3rem rgba(29, 30, 53, 0.3);
           box-shadow: 0.5rem 2rem 3rem rgba(29, 30, 53, 0.3);
@@ -92,6 +92,7 @@ img {
 
 .accordion {
   width: calc(100% - 4rem);
+  margin-top: calc(min(20%,8rem));
 }
 
 .accordion__header {
@@ -131,9 +132,11 @@ img {
 }
 
 .illustration__mb {
-  display: block;
-  width: 67%;
-  margin-top: -30%;
+  width: calc(min(67%,35rem));
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -60%);
+          transform: translate(-50%, -60%);
 }
 
 .illustration__pc {
@@ -160,16 +163,16 @@ img {
   z-index: 2;
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-aspect-ratio: 4 / 3) and (min-height: 300px) {
   h1 {
     text-align: left;
-    font-size: calc(min(2.1vw,12rem));
+    font-size: clamp(2rem, 2.1vw, 12rem);
   }
   h2 {
-    font-size: calc(min(1vw,6rem));
+    font-size: clamp(1rem, 1vw, 6rem);
   }
   p {
-    font-size: calc(min(.9vw,5rem));
+    font-size: clamp(1rem, 0.9vw, 5rem);
   }
   .illustration {
     -ms-flex-preferred-size: 50%;
@@ -193,7 +196,7 @@ img {
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    min-width: unset;
+    min-width: 70rem;
     max-width: 400rem;
     max-height: 80%;
     width: calc(100% - 50rem);
@@ -205,6 +208,7 @@ img {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     padding: 0 10% 0 0;
+    margin: 0;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
