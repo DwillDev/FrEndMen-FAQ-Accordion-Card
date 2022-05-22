@@ -3,13 +3,14 @@
   display: flex;
   flex-flow: column wrap;
   gap: 14vmin;
-  min-width:200px;
 
   //Size & Position
   position: relative;
   left: 50%;
   top: 20vh;
-  transform: translateX(-50%);
+  transform: translateX(-50%);  
+  min-width:200px;
+  max-width:400rem;
   width: calc(100% - 6rem);
   padding-bottom:clamp(2rem,7vh,4rem);
   margin-bottom: 50%;

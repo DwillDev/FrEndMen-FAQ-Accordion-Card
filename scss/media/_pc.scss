@@ -1,9 +1,23 @@
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width:1050px) {
+  //Typography
   h1 {
     text-align: left;
+    font-size: $large-sz-pc;
   }
 
+  h2 {
+    font-size: $med-sz-pc;
+  }
+
+  p {
+    font-size: $small-sz-pc;
+  }
+
+  //Illustration
   .illustration {
+    flex-basis: 50%;
+    overflow: hidden;
+
     &__mb {
       display: none;
     }
@@ -13,7 +27,52 @@
     }
   }
 
-  .card{
-    background: white url('/./img/bg-pattern-desktop.svg') no-repeat left;
+  //Card
+  .card {
+    //Flex
+    flex-flow: row nowrap;
+    gap: 0;
+
+    //Size & Position
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: unset;
+    max-width: 400rem;
+    max-height: 80%;
+    width: calc(100% - 50rem);
+    padding: 5% 0;
+    margin: 0;
+
+    //Styling
+    background: white url('/./img/bg-pattern-desktop.svg') left -60rem bottom -17rem / auto calc(100% + 47rem) no-repeat fixed border-box;
+  }
+
+  //Accordion
+  .accordion {
+    flex-basis: 50%;
+    padding: 0 10% 0 0;
+    align-self: center;
+
+    &__header {
+      padding-bottom: 3vh;
+    }
+  }
+}
+
+//2k screens and up
+@media only screen and (min-width: 2561px) {
+  //Card
+  .card {
+    padding: 0;
+    height: 80%;
+  }
+
+  //Accordion
+  .accordion {
+    &__arrow {
+      width: 2.2vmin;
+    }
   }
 }

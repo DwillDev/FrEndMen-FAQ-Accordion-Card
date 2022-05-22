@@ -1,7 +1,30 @@
 .illustration{
     &__mb{
+        display:block;
         @extend %center-margin;
         width:67%;
         margin-top: -30%;
+    }
+    
+    &__pc {
+        display: none;
+
+        &--pic{
+            width:95%;
+            position:relative;
+            left: 32%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index:1
+        }
+
+        &--box{
+            position: absolute;
+            left: 0;
+            top: 60%;
+            transform: translate(-50%, -50%);
+            width: 17%;
+            z-index:2
+        }
     }
 }
