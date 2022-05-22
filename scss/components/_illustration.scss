@@ -1,9 +1,9 @@
 .illustration{
     &__mb{
-        display:block;
-        @extend %center-margin;
-        width:67%;
-        margin-top: -30%;
+        width:calc(min(67%,35rem));
+        position:absolute;
+        left: 50%;
+        transform: translate(-50%, -60%);
     }
     
     &__pc {

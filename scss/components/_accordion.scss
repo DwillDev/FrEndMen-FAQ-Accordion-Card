@@ -1,6 +1,7 @@
 .accordion {
   width: calc(100% - 4rem);
   @extend %center-margin;
+  margin-top:calc(min(20%,8rem));
 
   &__header {
     padding-bottom: 2rem;
