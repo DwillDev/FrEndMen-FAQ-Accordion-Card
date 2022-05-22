@@ -10,7 +10,7 @@
   &__main {
     display: flex;
     flex-flow: column wrap;
-    gap: calc(max(1.5rem,1vw));
+    gap: clamp(1.5rem,1vw,4rem);
   }
 
   &__q {

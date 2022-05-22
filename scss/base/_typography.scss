@@ -9,6 +9,7 @@ h2 {
   color: $txt-sc;
   font-weight: $med;
   font-size:$med-sz-mb;
+  transition: color 1s ease;
 
   &:hover {
     color: $txt-hover;
