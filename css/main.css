@@ -17,6 +17,8 @@ h2 {
   color: #4a4b5e;
   font-weight: 400;
   font-size: clamp(1.2rem, 3.6vmin, 1.5rem);
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
 }
 
 h2:hover {
@@ -107,7 +109,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  gap: calc(max(1.5rem,1vw));
+  gap: clamp(1.5rem, 1vw, 4rem);
 }
 
 .accordion__q {
@@ -166,13 +168,13 @@ img {
 @media only screen and (min-aspect-ratio: 4 / 3) and (min-height: 300px) {
   h1 {
     text-align: left;
-    font-size: clamp(2rem, 2.1vw, 12rem);
+    font-size: clamp(2rem, 2.1vw, 11rem);
   }
   h2 {
-    font-size: clamp(1rem, 1vw, 6rem);
+    font-size: clamp(1rem, 1vw, 5rem);
   }
   p {
-    font-size: clamp(1rem, 0.9vw, 5rem);
+    font-size: clamp(1rem, 0.9vw, 4rem);
   }
   .illustration {
     -ms-flex-preferred-size: 50%;
@@ -198,7 +200,9 @@ img {
             transform: translate(-50%, -50%);
     min-width: 70rem;
     max-width: 400rem;
-    max-height: 80%;
+    max-height: calc(max(80%,-webkit-fit-content));
+    max-height: calc(max(80%,-moz-fit-content));
+    max-height: calc(max(80%,fit-content));
     width: calc(100% - 50rem);
     padding: 5% 0;
     margin: 0;
