@@ -10,13 +10,14 @@
   top: 20vh;
   transform: translateX(-50%);
   min-width: 200px;
-  max-width:600px;
+  max-width: 600px;
   width: calc(100% - 6rem);
   padding-bottom: clamp(2rem, 7vh, 4rem);
   margin-bottom: 50%;
 
   //Styling
-  background: white url('/./img/bg-pattern-mobile.svg') no-repeat center top / calc(min(67%,35rem)) auto;
+  background: white url('/./img/bg-pattern-mobile.svg') no-repeat center top / calc(min(67%, 35rem))
+    auto;
   border-radius: 2rem;
   box-shadow: 0.5rem 2rem 3rem rgba($txt-pr, 0.3);
 }

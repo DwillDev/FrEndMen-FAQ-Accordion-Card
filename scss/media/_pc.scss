@@ -1,4 +1,4 @@
-  @media only screen and (min-aspect-ratio: 4 / 3) and (min-height:300px){
+@media only screen and (min-aspect-ratio: 4 / 3) and (min-height: 300px) {
   //Typography
   h1 {
     text-align: left;
@@ -40,7 +40,7 @@
     transform: translate(-50%, -50%);
     min-width: 70rem;
     max-width: 400rem;
-    max-height: calc(max(80%,fit-content));
+    max-height: calc(max(80%, fit-content));
     width: calc(100% - 50rem);
     padding: 5% 0;
     margin: 0;

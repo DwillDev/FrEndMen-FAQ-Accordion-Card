@@ -86,7 +86,7 @@ img {
   width: calc(100% - 6rem);
   padding-bottom: clamp(2rem, 7vh, 4rem);
   margin-bottom: 50%;
-  background: white url("/./img/bg-pattern-mobile.svg") no-repeat center top/calc(min(67%,35rem)) auto;
+  background: white url("/./img/bg-pattern-mobile.svg") no-repeat center top/calc(min(67%, 35rem)) auto;
   border-radius: 2rem;
   -webkit-box-shadow: 0.5rem 2rem 3rem rgba(29, 30, 53, 0.3);
           box-shadow: 0.5rem 2rem 3rem rgba(29, 30, 53, 0.3);
@@ -94,7 +94,7 @@ img {
 
 .accordion {
   width: calc(100% - 4rem);
-  margin-top: calc(min(20%,8rem));
+  margin-top: calc(min(20%, 8rem));
 }
 
 .accordion__header {
@@ -134,7 +134,7 @@ img {
 }
 
 .illustration__mb {
-  width: calc(min(67%,35rem));
+  width: calc(min(67%, 35rem));
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%, -60%);
@@ -200,9 +200,9 @@ img {
             transform: translate(-50%, -50%);
     min-width: 70rem;
     max-width: 400rem;
-    max-height: calc(max(80%,-webkit-fit-content));
-    max-height: calc(max(80%,-moz-fit-content));
-    max-height: calc(max(80%,fit-content));
+    max-height: calc(max(80%, -webkit-fit-content));
+    max-height: calc(max(80%, -moz-fit-content));
+    max-height: calc(max(80%, fit-content));
     width: calc(100% - 50rem);
     padding: 5% 0;
     margin: 0;

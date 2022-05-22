@@ -1,7 +1,7 @@
 .accordion {
   width: calc(100% - 4rem);
   @extend %center-margin;
-  margin-top:calc(min(20%,8rem));
+  margin-top: calc(min(20%, 8rem));
 
   &__header {
     padding-bottom: 2rem;
@@ -10,7 +10,7 @@
   &__main {
     display: flex;
     flex-flow: column wrap;
-    gap: clamp(1.5rem,1vw,4rem);
+    gap: clamp(1.5rem, 1vw, 4rem);
   }
 
   &__q {
@@ -19,12 +19,12 @@
     justify-content: space-between;
   }
 
-  &__arrow{
-    width:clamp(1rem,1vw,1.5rem);
+  &__arrow {
+    width: clamp(1rem, 1vw, 1.5rem);
   }
 
   &__a {
     padding-top: 1rem;
-    width:calc(100% - 2rem);
+    width: calc(100% - 2rem);
   }
 }

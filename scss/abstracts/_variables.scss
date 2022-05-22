@@ -1,32 +1,31 @@
 //Colors
     //Gradient
-    $bg-c: linear-gradient(to bottom,hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    $bg-c: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 
-    //Text
-    $txt-pr:hsl(238, 29%, 16%);
-    $txt-sc:hsl(237, 12%, 33%);
-    $txt-tr:hsl(240, 6%, 50%);
-    $txt-hover:hsl(14, 88%, 65%);
-    
-    //Divider
-    $div-c: hsl(240, 5%, 91%);
+//Text
+$txt-pr: hsl(238, 29%, 16%);
+$txt-sc: hsl(237, 12%, 33%);
+$txt-tr: hsl(240, 6%, 50%);
+$txt-hover: hsl(14, 88%, 65%);
+
+//Divider
+$div-c: hsl(240, 5%, 91%);
 
 //Font
     //Family
-    $ks:'Kumbh Sans', sans-serif;
+    $ks: 'Kumbh Sans', sans-serif;
 
     //Weight
-    $med:400;
-    $bold:700;
+    $med: 400;
+    $bold: 700;
 
     //Size
-    $large-sz-mb: clamp(1.2rem,8vmin,3.4rem);
-    $med-sz-mb:clamp(1.2rem,3.6vmin,1.5rem);
-    $small-sz-mb:clamp(1.2rem,3vmin,1.3rem);
+    $large-sz-mb: clamp(1.2rem, 8vmin, 3.4rem);
+    $med-sz-mb: clamp(1.2rem, 3.6vmin, 1.5rem);
+    $small-sz-mb: clamp(1.2rem, 3vmin, 1.3rem);
 
-    $large-sz-pc: clamp(2rem,2.1vw,11rem);
-    $med-sz-pc:clamp(1rem,1vw,5rem);
-    $small-sz-pc:clamp(1rem,.9vw,4rem);
+    $large-sz-pc: clamp(2rem, 2.1vw, 11rem);
+    $med-sz-pc: clamp(1rem, 1vw, 5rem);
+    $small-sz-pc: clamp(1rem, 0.9vw, 4rem);
 
     $body-sz: 1.2rem;
-

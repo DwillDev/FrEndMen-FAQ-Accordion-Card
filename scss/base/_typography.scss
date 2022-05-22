@@ -8,7 +8,7 @@ h1 {
 h2 {
   color: $txt-sc;
   font-weight: $med;
-  font-size:$med-sz-mb;
+  font-size: $med-sz-mb;
   transition: color 1s ease;
 
   &:hover {
@@ -25,5 +25,5 @@ p {
 
 hr {
   border: none;
-  border-bottom: .1rem solid $div-c;
+  border-bottom: 0.1rem solid $div-c;
 }
