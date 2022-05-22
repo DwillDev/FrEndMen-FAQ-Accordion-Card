@@ -20,8 +20,13 @@
     $bold:700;
 
     //Size
-    $large-sz: clamp(1.2rem,8vmin,100rem);
-    $med-sz:clamp(1.2rem,3.6vmin,100rem);
-    $small-sz:clamp(1.2rem,3vmin,100rem);
+    $large-sz-mb: clamp(1.2rem,8vmin,3.4rem);
+    $med-sz-mb:clamp(1.2rem,3.6vmin,1.5rem);
+    $small-sz-mb:clamp(1.2rem,3vmin,1.3rem);
+
+    $large-sz-pc: calc(min(2.1vw,12rem));
+    $med-sz-pc:calc(min(1vw,6rem));
+    $small-sz-pc:calc(min(.9vw,5rem));
+
     $body-sz: 1.2rem;
 
