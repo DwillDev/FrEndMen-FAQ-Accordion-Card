@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 body {
-  overflow-y: visible;
   background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat fixed;
   background: linear-gradient(to bottom, #af67e9, #6565e7) no-repeat fixed;
   font-size: 1.2rem;
@@ -10,13 +9,14 @@ body {
 h1 {
   font-weight: 700;
   color: #1d1e35;
-  font-size: clamp(1.2rem, 8vmin, 100rem);
+  font-size: clamp(1.2rem, 8vmin, 3.4rem);
+  text-align: center;
 }
 
 h2 {
   color: #4a4b5e;
   font-weight: 400;
-  font-size: clamp(1.2rem, 3.6vmin, 100rem);
+  font-size: clamp(1.2rem, 3.6vmin, 1.5rem);
 }
 
 h2:hover {
@@ -27,7 +27,7 @@ h2:hover {
 p {
   font-weight: 400;
   color: #787887;
-  font-size: clamp(1.2rem, 3vmin, 100rem);
+  font-size: clamp(1.2rem, 3vmin, 1.3rem);
 }
 
 hr {
@@ -74,12 +74,13 @@ img {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   gap: 14vmin;
-  min-width: 200px;
   position: relative;
   left: 50%;
   top: 20vh;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  min-width: 200px;
+  max-width: 400rem;
   width: calc(100% - 6rem);
   padding-bottom: clamp(2rem, 7vh, 4rem);
   margin-bottom: 50%;
@@ -105,7 +106,7 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  gap: 1.5rem;
+  gap: calc(max(1.5rem,1vw));
 }
 
 .accordion__q {
@@ -120,43 +121,106 @@ img {
           justify-content: space-between;
 }
 
+.accordion__arrow {
+  width: clamp(1rem, 1vw, 1.5rem);
+}
+
 .accordion__a {
   padding-top: 1rem;
   width: calc(100% - 2rem);
 }
 
 .illustration__mb {
+  display: block;
   width: 67%;
   margin-top: -30%;
 }
 
-@media only screen and (orientation: portrait) {
+.illustration__pc {
+  display: none;
+}
+
+.illustration__pc--pic {
+  width: 95%;
+  position: relative;
+  left: 32%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.illustration__pc--box {
+  position: absolute;
+  left: 0;
+  top: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 17%;
+  z-index: 2;
+}
+
+@media only screen and (min-width: 1050px) {
   h1 {
-    text-align: center;
+    text-align: left;
+    font-size: calc(min(2.1vw,12rem));
+  }
+  h2 {
+    font-size: calc(min(1vw,6rem));
+  }
+  p {
+    font-size: calc(min(.9vw,5rem));
+  }
+  .illustration {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    overflow: hidden;
   }
   .illustration__mb {
-    display: block;
-  }
-  .illustration__pc {
     display: none;
   }
+  .illustration__pc {
+    display: block;
+  }
   .card {
-    background: white url("/./img/bg-pattern-mobile.svg") no-repeat center top/67% auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    gap: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    min-width: unset;
+    max-width: 400rem;
+    max-height: 80%;
+    width: calc(100% - 50rem);
+    padding: 5% 0;
+    margin: 0;
+    background: white url("/./img/bg-pattern-desktop.svg") left -60rem bottom -17rem/auto calc(100% + 47rem) no-repeat fixed border-box;
+  }
+  .accordion {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 0 10% 0 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .accordion__header {
+    padding-bottom: 3vh;
   }
 }
 
-@media only screen and (orientation: landscape) {
-  h1 {
-    text-align: left;
-  }
-  .illustration__mb {
-    display: none;
-  }
-  .illustration__pc {
-    display: block;
-  }
+@media only screen and (min-width: 2561px) {
   .card {
-    background: white url("/./img/bg-pattern-desktop.svg") no-repeat left;
+    padding: 0;
+    height: 80%;
+  }
+  .accordion__arrow {
+    width: 2.2vmin;
   }
 }
 /*# sourceMappingURL=main.css.map */
